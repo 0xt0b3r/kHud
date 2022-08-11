@@ -12,7 +12,13 @@ Citizen.CreateThread(function()
         SendNUIMessage({
             action = 'update',
             gameHour = currentHour .. ":" .. currentMinute,
-            playerCash = ESX.Math.GroupDigits(ESX.GetPlayerData().money)
+            playerCash = ESX.Math.GroupDigits(ESX.PlayerData.money)
         })
     end
+end)
+
+
+RegisterNetEvent('esx:setAccountMoney')
+AddEventHandler('esx:setAccountMoney', function(account)
+    ESX.PlayerData.money = account.money
 end)
