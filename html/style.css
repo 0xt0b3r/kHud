@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@font-face {
+	font-family: 'Pricedown';
+	src: url('./fonts/pdown.ttf')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    text-align: right;
+}
+
+.irl-infos {
+    font-size: 12px;
+}
+
+.player-money {
+    margin-top: -10px;
+    color: rgb(30, 151, 0);
+    font-family: 'Pricedown';
+    font-size: 25px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
