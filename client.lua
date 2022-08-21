@@ -20,5 +20,7 @@ end)
 
 RegisterNetEvent('esx:setAccountMoney')
 AddEventHandler('esx:setAccountMoney', function(account)
-    ESX.PlayerData.money = account.money
+     if account.name == "money" then 
+        ESX.PlayerData.money = account.money
+    end
 end)
