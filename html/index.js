@@ -1,4 +1,4 @@
-var months = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+var months = ['January', 'Febuary', 'Mars', 'April', 'March', 'June', 'July', 'August', 'Seotember', 'October', 'November', 'December'];
 
 onload = () => {
     addEventListener('message', (event) => {
@@ -21,6 +21,9 @@ onload = () => {
                 var irlDate = event.data.irlDate;
                 var irlHour =  event.data.irlHour;
                 var playerCash = event.data.playerCash;
+                var playerJob = event.data.playerJob;
+                var playerJobClass = event.data.playerJobClass;
+                var playerJobGang = event.data.playerJobGang;
                 let element = `
                     <p class="ig-infos"><i class="fa-solid fa-location-dot"></i> Los Santos  <i class="fa-solid fa-clock"></i> ${event.data.gameHour}</p>
                     <p class="irl-infos"><i class="fa-solid fa-calendar"></i> ${dateString} <i class="fa-solid fa-clock"></i> ${hourString}</p>
